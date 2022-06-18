@@ -1,0 +1,21 @@
+.child {
+    background-color: #EE99EE;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container {
+        border: 1px solid blue;
+        margin: 10px;
+        width: 640px;
+        height: 400px;
+    }
+
+    .invalid {
+        background-color: red;
+        border: 1px solid red;
+    }
+}
+

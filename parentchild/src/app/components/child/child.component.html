@@ -1,0 +1,29 @@
+<div class="child">
+    <p>child works!</p>
+    <div [ngClass]="formClass">
+        <form [formGroup]="formGroup" (submit)="onSubmit()">
+            <label>
+                Name:
+                <input type="text" formControlName="name" >
+            </label>
+
+            <label>
+                Password:
+                <input [type]="showPassword ? 'text' : 'password'" formControlName="password" >
+                <label>
+                    {{showPassword ? 'Hide Password' : 'Show Password'}}
+                    <input type="button" (click)="togglePasswordVisibility()">
+                </label>
+            </label>
+
+            <label>
+                Accept:
+                <input type="checkbox" formControlName="euaAccepted" >
+            </label>
+
+
+            <input type="submit">
+        </form>
+
+    </div>
+</div>

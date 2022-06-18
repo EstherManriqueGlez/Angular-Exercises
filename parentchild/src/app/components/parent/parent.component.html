@@ -1,0 +1,8 @@
+<p>parent works!</p>
+<div class="child-container" *ngIf="showChild; else childNotPresent">
+    <child></child>
+</div>
+
+<ng-template #childNotPresent>
+    <div>Child not present</div>
+</ng-template>
